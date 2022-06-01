@@ -12,4 +12,7 @@ function draw() {
     } //end loop
   } //end j loop
   c.draw()
-}
+  if(c.isPressed){
+    c.locate(mouseX, mouseY)
+  }//end if
+}//end draw
