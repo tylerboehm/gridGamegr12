@@ -77,6 +77,7 @@ function Clickable(x,y) {
 	this.tint = null; // tint image using color
 	this.noTint = true; // default to disable tinting
 	this.filter = null; // filter effect
+    this.isPressed = false;
 
 	this.updateTextSize = function () {
 		if (this.textScaled) {
