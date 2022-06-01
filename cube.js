@@ -14,3 +14,7 @@ function createCube(){
     c.y = Math.floor(c.y / 30)*30;
   }
 }//end createCube
+
+function placeCube(){
+  
+}
