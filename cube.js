@@ -10,5 +10,7 @@ function createCube(){
   }
   c.onRelease = function(){
     c.isPressed = false;
+    c.x = Math.floor(c.x / 30)*30;
+    c.y = Math.floor(c.y / 30)*30;
   }
 }//end createCube
