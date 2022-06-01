@@ -1,6 +1,7 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 600);
   createGrid();
+  createCube();
 }
 
 function draw() {
@@ -10,4 +11,5 @@ function draw() {
       g[j][i].draw();
     } //end loop
   } //end j loop
+  c.draw()
 }
