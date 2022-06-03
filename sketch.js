@@ -2,6 +2,7 @@ function setup() {
   createCanvas(400, 600);
   createGrid();
   createCube();
+  createEl()
 }
 
 function draw() {
@@ -12,6 +13,12 @@ function draw() {
     } //end loop
   } //end j loop
   c.draw()
+  el.draw()
+  el2.draw()
+  if(el.isPressed){
+    el.locate(mouseX, mouseY)
+    el2.locate(mouseX, mouseY+30)
+  }//end if
   if(c.isPressed){
     c.locate(mouseX, mouseY)
   }//end if
