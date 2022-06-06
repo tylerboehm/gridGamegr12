@@ -1,20 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+function setup() {
+  createCanvas(400, 600);
+  createGrid();
+  createCube();
+  createEl();
+  createelf();
+}
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="clickable.js"></script>
-    <script src="grid.js"></script>
-    <script src="el.js"></script>
-    <script src="elFlipped.js"></script>
-    <script src="cube.js"></script>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+function draw() {
+  background(220);
+  for (j = 0; j < 10; j++) {
+    for (i = 0; i < 10; i++) {
+      g[j][i].draw();
+    } //end loop
+  } //end j loop
+  c.draw()
+  
+  el.draw()
+  el2.draw()
+  
+  elf.draw()
+  elf2.draw()
+  
+  
+  if(el.isPressed){
+    el.locate(mouseX, mouseY)
+    el2.locate(mouseX, mouseY+30)
+  }//end if
+  if(elf.isPressed){
+    elf.locate(mouseX, mouseY)
+    elf2.locate(mouseX - 30, mouseY+30)
+  }//end if
+  if(c.isPressed){
+    c.locate(mouseX, mouseY)
+  }//end if
+}//end draw
