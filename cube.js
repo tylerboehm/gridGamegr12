@@ -1,7 +1,7 @@
 let c;
 
 function createCube(){
-  c = new Clickable(30,360);
+  c = new Clickable(1000,360);
   c.resize(60,60);
   c.color = "green";
   c.text = "";
