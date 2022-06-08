@@ -7,6 +7,8 @@ function createEs() {
   es.resize(60, 30);
   es2.resize(60, 30);
   es2.strokeWeight = 0;
+  es.cornerRadius = 0;
+  es2.cornerRadius = 0;
   es.strokeWeight = 0;
   es.color = "red";
   es2.color = "red";
