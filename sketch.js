@@ -48,8 +48,14 @@ function placeShapes() {
   /*this will randomly select 3 shapes
   and place them below the grid
   */
+  let numsUsed = []
+  numsUsed.push(-1)
   for (i = 0; i < 3; i++) {
     let rndNum = Math.floor(random(4));
+    while(numsUsed.includes(rndNum)){
+      rndNum = Math.floor(random(4));
+    }
+    numsUsed.push(rndNum)
     /*Each if block will represent a 
     shape in the game.
     We are just resetting the x position of
