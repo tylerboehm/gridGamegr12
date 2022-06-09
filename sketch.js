@@ -42,27 +42,6 @@ function draw() {
     c.locate(mouseX, mouseY);
   } //end if
 } //end draw
-function checkInGrid(thisShape){
-  if(thisShape.x < 30){
-    //the shape off the grid to the left.
-    thisShape.x = 30;
-  }
-  if(thisShape.y < 30){
-    //the shape is off the top of 
-    //the grid.
-    thisShape.y = 30;
-  }
-  if(thisShape.y > 330){
-    //the shape is off the top of 
-    //the grid.
-    thisShape.y = 300;
-  }
-   if(thisShape.x > 330){
-    //the shape is off the top of 
-    //the grid.
-    thisShape.x = 300;
-  }
-}
 function placeShapes() {
   /*this will randomly select 3 shapes
   and place them below the grid
